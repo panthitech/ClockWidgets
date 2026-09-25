@@ -4,14 +4,14 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](LICENSE)
 
 <p align="center">
-  <img src="screenshots/logo.png" width="120">
+  <img src="Screenshots/logo.png" width="120">
 </p>
 
 ### Overview :
 Clock Widget - Digital Clock is a Elegant widget for your smart phones Enjoy personalizing your home screen with this Digital clock Widget.
 
 <p align="center">
-  <img src="screenshots/banner.jpg" width="100%">
+  <img src="Screenshots/banner.jpg" width="100%">
 </p> 
 
 --
@@ -50,11 +50,11 @@ dropping it to add to your screen.
 <p align="center" float="left">
 <table>
   <tr>
-    <td><img src="screenshots/ss1.jpg" width="230"></td>
-    <td><img src="screenshots/ss2.jpg" width="230"></td>
-    <td><img src="screenshots/ss3.jpg" width="230"></td>
-    <td><img src="screenshots/ss4.jpg" width="230"></td>
-    <td><img src="screenshots/ss5.jpg" width="230"></td>
+    <td><img src="Screenshots/ss1.jpg" width="230"></td>
+    <td><img src="Screenshots/ss2.jpg" width="230"></td>
+    <td><img src="Screenshots/ss3.jpg" width="230"></td>
+    <td><img src="Screenshots/ss4.jpg" width="230"></td>
+    <td><img src="Screenshots/ss5.jpg" width="230"></td>
   </tr>
  </table>
  
