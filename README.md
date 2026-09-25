@@ -56,7 +56,9 @@ dropping it to add to your screen.
     <img src="Screenshots/ss5.jpg" width="100%">
 
  </p>
-
+<p align="center">
+  <img src="Screenshots/ss1.jpg" width="120">
+</p>
 
 
 ## 📂 Project Structure
