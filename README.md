@@ -50,7 +50,7 @@ dropping it to add to your screen.
 <p align="center" float="left">
 <table>
   <tr>
-    <td><img src="Screenshots/ss1.jpg" width="230"></td>
+    <td><img src="Screenshots/ss1.jpg"></td>
     <td><img src="Screenshots/ss2.jpg" width="230"></td>
     <td><img src="Screenshots/ss3.jpg" width="230"></td>
     <td><img src="Screenshots/ss4.jpg" width="230"></td>
