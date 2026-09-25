@@ -47,18 +47,15 @@ dropping it to add to your screen.
 
 ## 📸 Screenshots
 
-<p align="center" >
 
-    <img src="Screenshots/ss1.jpg"width="100%">
-    <img src="Screenshots/ss2.jpg" width="100%">
-    <img src="Screenshots/ss3.jpg" width="100%">
-    <img src="Screenshots/ss4.jpg" width="100%">
-    <img src="Screenshots/ss5.jpg" width="100%">
-
- </p>
-<p align="center">
-  <img src="Screenshots/ss1.jpg" width="120">
+ <p align="center" float="left">
+<img src="Screenshots/ss1.jpg"width="100%"><br>
+    <img src="Screenshots/ss2.jpg" width="100%"><br>
+    <img src="Screenshots/ss3.jpg" width="100%"><br>
+    <img src="Screenshots/ss4.jpg" width="100%"><br>
+    <img src="Screenshots/ss5.jpg" width="100%"><br>
 </p>
+
 
 
 ## 📂 Project Structure
