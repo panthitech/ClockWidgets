@@ -1,4 +1,4 @@
-# 🎮 Bubble Shooter Android Game
+# Clock Widget Android App
 ![Android](https://img.shields.io/badge/Platform-Android-green)
 ![Java](https://img.shields.io/badge/Language-Java-blue)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](LICENSE)
