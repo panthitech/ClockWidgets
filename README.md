@@ -47,7 +47,7 @@ dropping it to add to your screen.
 
 ## 📸 Screenshots
 
-<p align="center" float="left">
+<p align="center" >
 
     <img src="Screenshots/ss1.jpg"width="100%">
     <img src="Screenshots/ss2.jpg" width="100%">
@@ -55,7 +55,7 @@ dropping it to add to your screen.
     <img src="Screenshots/ss4.jpg" width="100%">
     <img src="Screenshots/ss5.jpg" width="100%">
 
- 
+ </p>
 
 
 
