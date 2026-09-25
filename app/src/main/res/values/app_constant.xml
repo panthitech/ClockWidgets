@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    Original-->
+
+    <string name="app_open">ca-app-pub-4619086346751580/8255205674</string>
+    <string name="app_id">ca-app-pub-4619086346751580~4866625006</string>
+    <string name="banner_preview">ca-app-pub-4619086346751580/2521692955</string>
+    <string name="interstitial_my_creation">ca-app-pub-4619086346751580/7582447942</string>
+    <string name="native_preview">ca-app-pub-4619086346751580/6269366278</string>
+    <string name="ad_attribution">Ad</string>
+    <!--    TEST-->
+
+<!--    <string name="app_open">ca-app-pub-3940256099942544/9257395921</string>-->
+<!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="banner_preview">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="interstitial_my_creation">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="native_preview">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="ad_attribution">Ad</string>-->
+
+
+</resources>

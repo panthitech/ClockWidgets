@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color1">#FF1100</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="colorBlue">#3156d5</color>
+    <color name="colorDarkGray">#1d1f26</color>
+    <color name="colorGray">#282a30</color>
+    <color name="colorGreen">#00730d</color>
+    <color name="colorOffWhite">#bfbfbf</color>
+    <color name="colorPink">#f5ff4e69</color>
+    <color name="colorPopaty">#ff00ff9e</color>
+    <color name="colorRed">#e40000</color>
+    <color name="colorTransparent">#000a00ae</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWidgetBackground">#00000000</color>
+    <color name="colorYellow">#ffc107</color>
+    <color name="colorNeon">#00ff9b</color>
+    <color name="colorGray1">#242424</color>
+    <color name="colorLiteYellow">#ffd351</color>
+    <color name="clock_17_minute_transparent">#9effa300</color>
+    <color name="colorMediumRed">#ff5858</color>
+    <color name="colorLiteBlack">#393939</color>
+    <color name="white1">#1B1B1B</color>
+
+</resources>

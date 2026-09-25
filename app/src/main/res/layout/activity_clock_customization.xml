@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray1"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_clock_customization_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorGray1"
+        android:elevation="0dp"
+        android:theme="@style/ToolbarTheme" />
+
+    <RelativeLayout
+        android:id="@+id/lls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_clock_customization_toolbar"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/activity_clock_customization_preview_iv_wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+
+                <LinearLayout
+                    android:id="@+id/activity_clock_customization_lly_viewstub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="25dp">
+
+                    <ViewStub
+                        android:id="@+id/activity_clock_customization_include_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/activity_clock_customization_add_automatically_fab_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/colorYellow"
+                        android:src="@drawable/ic_plus"
+                        app:borderWidth="0dp"
+                        app:elevation="10dp"
+                        app:fabSize="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.8"
+                android:background="@color/colorGray1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="Customization"
+                        android:textColor="@color/colorYellow"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_wallpaper_shown_or_not_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Background Wallpaper"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:maxLines="2"
+                                android:text="Show current wallpaper for better preview"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/activity_clock_customization_option_wallpaper_shown_or_not_check_box"
+                            android:layout_width="@dimen/activity_customization_option_check_box_width"
+                            android:layout_height="@dimen/activity_customization_option_check_box_height"
+                            android:layout_weight="2"
+                            android:buttonTint="@color/colorWhite"
+                            android:checked="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_12_or_24_format_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="12-hour format"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:maxLines="2"
+                                android:text="Check this to 12-hour format, otherwise 24-hour format"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/activity_clock_customization_option_12_or_24_format_check_box"
+                            android:layout_width="@dimen/activity_customization_option_check_box_width"
+                            android:layout_height="@dimen/activity_customization_option_check_box_height"
+                            android:layout_weight="2"
+                            android:buttonTint="@color/colorWhite"
+                            android:checked="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_am_or_pm_visibility_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="AM-PM Visibility"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:maxLines="2"
+                                android:text="Check this to AM-PM Visible"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/activity_clock_customization_option_am_or_pm_visibility_check_box"
+                            android:layout_width="@dimen/activity_customization_option_check_box_width"
+                            android:layout_height="@dimen/activity_customization_option_check_box_height"
+                            android:layout_weight="2"
+                            android:buttonTint="@color/colorWhite"
+                            android:checked="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_two_digits_hour_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Hour always as 2 digits"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="show hour with leading zero when checked"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/activity_clock_customization_option_hour_always_two_digits_check_box"
+                            android:layout_width="@dimen/activity_customization_option_check_box_width"
+                            android:layout_height="@dimen/activity_customization_option_check_box_height"
+                            android:layout_weight="2"
+                            android:buttonTint="@color/colorWhite"
+                            android:checked="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_hour_color_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Hour Color"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select your favorite hour color"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/activity_clock_customization_option_cv_hour_color_indicator"
+                            android:layout_width="@dimen/activity_customization_option_color_indicator_cv_width"
+                            android:layout_height="@dimen/activity_customization_option_color_indicator_cv_height"
+                            android:layout_weight="2"
+                            app:cardBackgroundColor="@color/colorRed"
+                            app:cardCornerRadius="@dimen/activity_customization_option_color_indicator_cv_radius" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_minute_color_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Minute Color"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select your favorite minute color"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/activity_clock_customization_option_cv_minute_color_indicator"
+                            android:layout_width="@dimen/activity_customization_option_color_indicator_cv_width"
+                            android:layout_height="@dimen/activity_customization_option_color_indicator_cv_height"
+                            android:layout_weight="2"
+                            app:cardBackgroundColor="@color/colorBlue"
+                            app:cardCornerRadius="@dimen/activity_customization_option_color_indicator_cv_radius" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_delimiter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:visibility="gone"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Delimiter Color"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select your favorite delimiter color"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/activity_clock_customization_option_cv_delimiter_color_indicator"
+                            android:layout_width="@dimen/activity_customization_option_color_indicator_cv_width"
+                            android:layout_height="@dimen/activity_customization_option_color_indicator_cv_height"
+                            android:layout_weight="2"
+                            app:cardBackgroundColor="@color/colorYellow"
+                            app:cardCornerRadius="@dimen/activity_customization_option_color_indicator_cv_radius" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_am_or_pm_color_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="AM-PM Color"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select your favorite AM-PM color"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/activity_clock_customization_option_cv_am_or_pm_color_indicator"
+                            android:layout_width="@dimen/activity_customization_option_color_indicator_cv_width"
+                            android:layout_height="@dimen/activity_customization_option_color_indicator_cv_height"
+                            android:layout_weight="2"
+                            app:cardBackgroundColor="@color/colorGreen"
+                            app:cardCornerRadius="@dimen/activity_customization_option_color_indicator_cv_radius" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_day_color_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Day Color"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select your favorite day color"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/activity_clock_customization_option_cv_day_color_indicator"
+                            android:layout_width="@dimen/activity_customization_option_color_indicator_cv_width"
+                            android:layout_height="@dimen/activity_customization_option_color_indicator_cv_height"
+                            android:layout_weight="2"
+                            app:cardBackgroundColor="@color/colorDarkGray"
+                            app:cardCornerRadius="@dimen/activity_customization_option_color_indicator_cv_radius" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_date_color_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/activity_clock_customization_option_tv_date_color_heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Date Color"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:id="@+id/activity_clock_customization_option_tv_date_color_msg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select your favorite date color"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/activity_clock_customization_option_cv_date_color_indicator"
+                            android:layout_width="@dimen/activity_customization_option_color_indicator_cv_width"
+                            android:layout_height="@dimen/activity_customization_option_color_indicator_cv_height"
+                            android:layout_weight="2"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="@dimen/activity_customization_option_color_indicator_cv_radius" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_time_background_color_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Time Background Color"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select your favorite time background color"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/activity_clock_customization_option_cv_time_background_color_indicator"
+                            android:layout_width="@dimen/activity_customization_option_color_indicator_cv_width"
+                            android:layout_height="@dimen/activity_customization_option_color_indicator_cv_height"
+                            android:layout_weight="2"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="@dimen/activity_customization_option_color_indicator_cv_radius" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_delimiter_selection"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Delimiter"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Select delimiter between hour and minute"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_clock_customization_option_reset_all_lly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/activity_customization_option_padding_vertical"
+                        android:paddingBottom="@dimen/activity_customization_option_padding_vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Reset to Default"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/activity_customization_option_heading_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Click to reset all option &amp; colors"
+                                android:textColor="@color/colorOffWhite"
+                                android:textSize="@dimen/activity_customization_option_msg_text_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/activity_clock_customization_option_reset_all_image_view"
+                            android:layout_width="@dimen/activity_customization_option_check_box_width"
+                            android:layout_height="@dimen/activity_customization_option_check_box_height"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_reset" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lls"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</LinearLayout>

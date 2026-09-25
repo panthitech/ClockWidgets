@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/widget_date_time_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWidgetBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextClock
+                android:id="@+id/widget_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:fontFamily="@font/sacramento_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Saturday"
+                android:format12Hour="cccc"
+                android:format24Hour="cccc"
+                android:textColor="@color/colorYellow"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/widget_time_control"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextClock
+                    android:id="@+id/widget_time_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/barlow_condensed_regular"
+                    android:gravity="right|center_vertical|center_horizontal|center|end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:format12Hour="hh"
+                    android:format24Hour="HH"
+                    android:paddingStart="10dp"
+                    android:text="08"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/widget_time_delimiter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/barlow_condensed_regular"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:paddingBottom="4dp"
+                    android:text=":"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="40sp" />
+
+                <TextClock
+                    android:id="@+id/widget_time_minute"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/barlow_condensed_regular"
+                    android:gravity="left|center_vertical|center_horizontal|center|start"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:text="45"
+                    android:format12Hour="mm"
+                    android:format24Hour="mm"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="40sp" />
+
+                <TextClock
+                    android:id="@+id/widget_time_am_pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="-30dp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/barlow_condensed_regular"
+                    android:gravity="left|center_vertical|center_horizontal|center|start"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text=" PM"
+                    android:format12Hour=" aa"
+                    android:format24Hour=" aa"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextClock
+                android:id="@+id/widget_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:fontFamily="@font/rubik_variablefont_wght"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:format12Hour="MMMM dd"
+                android:format24Hour="MMMM dd"
+                android:text="March 5"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

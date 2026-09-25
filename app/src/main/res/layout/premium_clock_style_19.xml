@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/widget_date_time_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWidgetBackground"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/background_black_shade_premium_clock_19"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextClock
+                android:id="@+id/widget_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/red_hat_display_black"
+                android:format12Hour="dd"
+                android:format24Hour="dd"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="15"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/premium_19_month_text_size"
+                android:textStyle="bold" />
+
+            <TextClock
+                android:id="@+id/widget_date_2_clock_premium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_light"
+                android:format12Hour="MMM"
+                android:format24Hour="MMM"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="SEP"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextClock
+                android:id="@+id/widget_date_3_clock_premium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="300sp"
+                android:autoSizeMinTextSize="2sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="5 JAN 2021"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_white_shade_premium_clock_19"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextClock
+                    android:id="@+id/widget_time_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:format12Hour="hh"
+                    android:format24Hour="HH"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:text="06"
+                    android:textColor="@color/colorLiteBlack"
+                    android:textSize="@dimen/premium_19_month_text_size" />
+
+                <TextView
+                    android:id="@+id/widget_time_delimiter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:text=":"
+                    android:textColor="@color/colorLiteBlack"
+                    android:textSize="@dimen/premium_19_month_text_size" />
+
+                <TextClock
+                    android:id="@+id/widget_time_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:format12Hour="mm"
+                    android:format24Hour="mm"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:text="48"
+                    android:textColor="@color/colorLiteBlack"
+                    android:textSize="@dimen/premium_19_month_text_size" />
+
+                <TextClock
+                    android:id="@+id/widget_time_am_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:format12Hour="aa"
+                    android:format24Hour="aa"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:text="AM"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorLiteBlack"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextClock
+                android:id="@+id/widget_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:fontFamily="@font/montserrat_light"
+                android:format12Hour="cccc"
+                android:format24Hour="cccc"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="MONDAY"
+                android:textAllCaps="true"
+                android:textColor="@color/colorLiteBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/widget_date_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

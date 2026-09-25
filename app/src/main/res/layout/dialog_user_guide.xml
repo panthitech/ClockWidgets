@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/custom_dialog_rate_us_card_view_width"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/custom_dialog_rate_us_card_view_elevation"
+    app:cardBackgroundColor="@color/colorGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/dialog_rate_us_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/spartan_semi_bold"
+                android:text="Press &amp; hold on the home screen to get clock widget "
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <VideoView
+                android:id="@+id/dialog_user_guide_vv"
+                android:layout_width="250dp"
+                android:layout_height="450dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/dialog_user_guide_tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="OK"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
